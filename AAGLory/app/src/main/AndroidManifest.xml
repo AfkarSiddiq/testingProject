@@ -24,6 +24,10 @@
 
         <activity android:name=".HomeActivity" />
         <activity android:name=".Recomendation" />
+        <activity android:name=".Skincare" />
+        <activity android:name=".MakeUp" />
+        <activity android:name=".SerumWajah" />
+        <activity android:name=".Lips" />
     </application>
 
 </manifest>

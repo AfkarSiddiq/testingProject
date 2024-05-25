@@ -1,6 +1,7 @@
 package com.example.aaglory
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aaglory.databinding.ActivityHomeBinding
 
@@ -19,9 +20,16 @@ class HomeActivity : AppCompatActivity() {
         }
 
         // Tambahkan OnClickListener untuk CardView lainnya jika ada
-//        binding.cardView2.setOnClickListener {
-//            val intent = Intent(this, AnotherActivity::class.java)
-//            startActivity(intent)
-//        }
+        binding.CardViewMakeUp.setOnClickListener {
+//            Log.d("HomeActivity", "CardView1 clicked")
+            val intent = Intent(this, MakeUp::class.java)
+            startActivity(intent)
+        }
+
+        binding.CardViewSkincare.setOnClickListener{
+            val intent = Intent(this, Skincare::class.java)
+            startActivity(intent)
+        }
+
     }
 }

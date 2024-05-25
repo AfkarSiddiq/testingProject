@@ -12,34 +12,29 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="792dp"
-            android:paddingBottom="80dp">
+            android:layout_height="655dp">
 
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                app:cardBackgroundColor="#E87777"
-                app:cardCornerRadius="24dp">
+                android:orientation="vertical">
 
-                <LinearLayout
+                <ImageView
+                    android:id="@+id/imageView6"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="268dp"
+                    android:isScrollContainer="true"
+                    android:overScrollMode="always"
+                    app:srcCompat="@drawable/product" />
 
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="match_parent"
-                        android:layout_height="261dp"
-                        app:srcCompat="@drawable/product" />
-
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="5dp"
-                        android:text="Ingredients : " />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:nextFocusUp="@id/CardViewMakeUp"
+                    android:scrollbarSize="0dp"
+                    app:cardBackgroundColor="#F7EBEF"
+                    app:cardCornerRadius="24dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -48,7 +43,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            app:layout_constraintTop_toTopOf="parent">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -63,6 +59,7 @@
                                     android:layout_marginTop="10dp"
                                     android:layout_weight="1"
                                     android:text="5X Ceramide Barrier Moisture Gel 30gr"
+                                    android:textColor="#1E1E1E"
                                     android:textSize="23sp"
                                     android:textStyle="bold" />
 
@@ -82,7 +79,8 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:drawableLeft="@drawable/baseline_star_24"
-                                    android:text="9/10" />
+                                    android:text="9/10"
+                                    android:textColor="#1E1E1E" />
                             </LinearLayout>
 
                             <TextView
@@ -90,7 +88,58 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="15dp"
-                                android:text="Deskripsi Produk" />
+                                android:text="Deskripsi Produk"
+                                android:textColor="#1E1E1E" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Ingredients : "
+                                android:textColor="#1E1E1E" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/manfaat1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="MSH Niacinamide : Niacinamide dengan kualitas premium dengan kombinasi MSH, mencerahkan kulit dengan cepat tanpa menyebabkan iritasi."
+                                    android:textColor="#1E1E1E" />
+
+                                <TextView
+                                    android:id="@+id/manfaat2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Alpha Arbutin : Antioksidan alami dan pencerah kulit. sangat efektif dalam pencegahan pembentukan melanin, memperbaiki penampilan bintik-bintik penuaan, bintik-bintik, melasma, dan pigmentasi pasca-inflamasi."
+                                    android:textColor="#1E1E1E" />
+
+                                <TextView
+                                    android:id="@+id/manfaat3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Tranexamic Acid : Terbukti secara ilmiah memiliki efek memutihkan, terutama untuk hiperpigmentasi akibat sinar ultraviolet."
+                                    android:textColor="#1E1E1E" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Manfaat : "
+                                android:textColor="#1E1E1E" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -101,87 +150,53 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/manfaat1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="8dp"
-                                    android:text="MSH Niacinamide : Niacinamide dengan kualitas premium dengan kombinasi MSH, mencerahkan kulit dengan cepat tanpa menyebabkan iritasi." />
-
-                                <TextView
-                                    android:id="@+id/manfaat2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="10dp"
-                                    android:text="Alpha Arbutin : Antioksidan alami dan pencerah kulit. sangat efektif dalam pencegahan pembentukan melanin, memperbaiki penampilan bintik-bintik penuaan, bintik-bintik, melasma, dan pigmentasi pasca-inflamasi." />
-
-                                <TextView
-                                    android:id="@+id/manfaat3"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="10dp"
-                                    android:text="Tranexamic Acid : Terbukti secara ilmiah memiliki efek memutihkan, terutama untuk hiperpigmentasi akibat sinar ultraviolet." />
-                            </LinearLayout>
-
-                            <TextView
-                                android:id="@+id/textView20"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="5dp"
-                                android:text="Manfaat : " />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginRight="15dp"
-                                android:orientation="vertical"
-                                android:paddingBottom="10dp">
-
-                                <TextView
                                     android:id="@+id/textView17"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="8dp"
-                                    android:text="- Mencerahkan warna kulit secara signifikan dalam 14 hari" />
+                                    android:text="- Mencerahkan warna kulit secara signifikan dalam 14 hari"
+                                    android:textColor="#1E1E1E" />
 
                                 <TextView
                                     android:id="@+id/textView19"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
-                                    android:text="- Meredakan kemerahan pada kulit" />
+                                    android:text="- Meredakan kemerahan pada kulit"
+                                    android:textColor="#1E1E1E" />
 
                                 <TextView
                                     android:id="@+id/textView18"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
-                                    android:text="- Mengurangi hiperpigmentasi" />
+                                    android:text="- Mengurangi hiperpigmentasi"
+                                    android:textColor="#1E1E1E" />
 
                                 <TextView
                                     android:id="@+id/textView21"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
-                                    android:text="- Memperbaiki elastisitas kulit wajah" />
+                                    android:text="- Memperbaiki elastisitas kulit wajah"
+                                    android:textColor="#1E1E1E" />
 
                                 <TextView
                                     android:id="@+id/textView22"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
-                                    android:text="- Menenangkan kulit dan menjaga skin barrier" />
+                                    android:text="- Menenangkan kulit dan menjaga skin barrier"
+                                    android:textColor="#1E1E1E" />
 
                             </LinearLayout>
 
                         </LinearLayout>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
         </ScrollView>
 
     </LinearLayout>

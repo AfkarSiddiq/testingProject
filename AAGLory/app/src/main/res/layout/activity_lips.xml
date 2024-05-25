@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="679dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="332dp"
+                    android:layout_margin="5dp"
+                    android:isScrollContainer="true"
+                    android:overScrollMode="always"
+                    app:srcCompat="@drawable/lip" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:scrollbarSize="0dp"
+                    app:cardBackgroundColor="#F7EBEF"
+                    app:cardCornerRadius="24dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/JudulAset"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:text="Rekomendasi Chocolate Lip Mate"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView35"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="1.  Maybelline Superstay Matte Ink (260 Hazelnut Hypnotizer) Wanginya coffee dan karena aplikatornya kayak teardrop jadi lebih gampang buat gambar bibir" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="2. Wardah Velvet Matte Lip Mousse (08 Brown Creator) teksturnya lembut banget dan velvety gitu, ga buat kering tapi berasa agak berat di bibir huhu" />
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="3. Maybelline Superstay Matte Ink (265 Caranel Collector) Coklat tua yang cukup oke di bibirku tapi sayang agak kering apalagi kalo di pake berkali kali sih" />
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="4. You Colorland Soft Stroke Lip Clay (R967 Tea Rose) dari semuanya aku kurang cocok sama yang ini sih, berasa kering di bibir dan kayak garis bibir lebih kelihatan. Padahal warnanya bagus" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="5. Barenbliss Berry Makes Comfort Lip Matte (05 Brown Avenue) ini warnanya bagus dan ga bikin bibir kering, cuma sayang banget warnanya gampang ilang sih" />
+
+                            <TextView
+                                android:id="@+id/textView29"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="6. Wardah Instaperfect Mattesetter Lip Matte Paint (12 The Voyage) Warnanya cakep cakep dan natural, sayang aja gampang ilang di bibir" />
+
+                            <TextView
+                                android:id="@+id/textView31"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="7. Dasique Blur Velvet Tint (05 Brick Rose) Ini unik sih lip velvet tapi dia ada stainnya. Range warnanya juga cakep cakep hihi" />
+
+                            <TextView
+                                android:id="@+id/textView33"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="8. Marshwillow Velvet Smoothies (Peanut Butter Mood) Affordable tapi bagus sih dan smooth banget di bibir, cuma agak gampang ilang." />
+
+                            <TextView
+                                android:id="@+id/textView34"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="Wajib bangey dilakuin 2-3 kali seminggu untuk mencegah pori-pori tersumbat, dan kulit bertekstur bisa pilih serum dengan kandungan AHA dan Salicylic Acid." />
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
