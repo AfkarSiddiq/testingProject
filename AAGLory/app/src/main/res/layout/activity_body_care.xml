@@ -24,112 +24,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:text="Make Up"
+                android:text="Body Care"
                 android:textColor="#E2FF0080"
                 android:textSize="22dp"
                 android:textStyle="bold" />
         </LinearLayout>
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbarSize="0dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/CardView_skincare"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="8dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <Button
-                                android:id="@+id/button"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Lipstik" />
-
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/CardViewMakeUp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="8dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:scrollbarFadeDuration="0">
-
-                            <Button
-                                android:id="@+id/button2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Cushion"
-                                android:textAllCaps="false" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="8dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <Button
-                                android:id="@+id/button3"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Powder"
-                                android:textAllCaps="false" />
-
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="8dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <Button
-                                android:id="@+id/button4"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Eyebrow"
-                                android:textAllCaps="false" />
-
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
-            </LinearLayout>
-        </HorizontalScrollView>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -147,7 +46,7 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardView4"
+                        android:id="@+id/urutanHairCareCard"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
@@ -159,7 +58,7 @@
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="#F4CECE"
+                                android:background="#F7EBEF"
                                 android:orientation="vertical"
                                 android:padding="5dp"
                                 app:circularflow_angles="10dp"
@@ -170,15 +69,15 @@
 
                                 <ImageView
                                     android:id="@+id/imageView8"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/rectangle9" />
+                                    android:layout_width="174dp"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/bodycare1" />
 
                                 <TextView
                                     android:id="@+id/textView5"
                                     android:layout_width="match_parent"
                                     android:layout_height="43dp"
-                                    android:text="Rekomendasi Chocolate Lip Mate"
+                                    android:text="Natur-e White Hand and Body Serum"
                                     android:textAlignment="textStart" />
 
                             </LinearLayout>
@@ -199,19 +98,19 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="#F4CECE"
+                                android:background="#F7EBEF"
                                 android:orientation="vertical"
                                 tools:layout_editor_absoluteX="8dp"
                                 tools:layout_editor_absoluteY="9dp">
 
                                 <ImageView
                                     android:id="@+id/imageView6"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="4dp"
                                     android:layout_marginTop="4dp"
                                     android:layout_marginRight="4dp"
-                                    app:srcCompat="@drawable/rectangle10" />
+                                    app:srcCompat="@drawable/bodycare2" />
 
                                 <TextView
                                     android:id="@+id/textView4"
@@ -220,7 +119,7 @@
                                     android:layout_marginLeft="8dp"
                                     android:layout_marginRight="8dp"
                                     android:layout_marginBottom="20dp"
-                                    android:text="Rate All My Cushion"
+                                    android:text="Lavojoy Let It Glow Body Serum Skin Brightening"
                                     android:textAlignment="textStart" />
                             </LinearLayout>
 
@@ -245,8 +144,8 @@
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="#F4CECE"
+                                android:layout_height="match_parent"
+                                android:background="#F7EBEF"
                                 android:orientation="vertical"
                                 android:padding="5dp"
                                 tools:ignore="MissingConstraints"
@@ -256,15 +155,14 @@
                                 <ImageView
                                     android:id="@+id/imageView1"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/rectangle11" />
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/bodycare3" />
 
                                 <TextView
                                     android:id="@+id/textView1"
                                     android:layout_width="match_parent"
                                     android:layout_height="43dp"
-                                    android:text="Rekomendasi Pinsil Alis (Cocok Untuk Pemula)"
-                                    android:textAlignment="textStart" />
+                                    android:text="Azarine Bodysaver Moisturiser Smooth On" />
 
                             </LinearLayout>
 
@@ -284,7 +182,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="#F4CECE"
+                                android:background="#F7EBEF"
                                 android:orientation="vertical"
                                 tools:layout_editor_absoluteX="8dp"
                                 tools:layout_editor_absoluteY="9dp">
@@ -295,7 +193,7 @@
                                     android:layout_marginLeft="4dp"
                                     android:layout_marginTop="4dp"
                                     android:layout_marginRight="4dp"
-                                    app:srcCompat="@drawable/rectangle12" />
+                                    app:srcCompat="@drawable/bodycare4" />
 
                                 <TextView
                                     android:id="@+id/textView2"
@@ -303,8 +201,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="8dp"
                                     android:layout_marginRight="8dp"
-                                    android:layout_marginBottom="20dp"
-                                    android:text="Rating My Local Cushion"
+                                    android:text="Herborist Juice For Skin Body Serum (Apple and Broccoli)"
                                     android:textAlignment="textStart" />
                             </LinearLayout>
 
@@ -330,7 +227,7 @@
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="#F4CECE"
+                                android:background="#F7EBEF"
                                 android:orientation="vertical"
                                 android:padding="5dp"
                                 tools:ignore="MissingConstraints"
@@ -341,13 +238,13 @@
                                     android:id="@+id/imageView2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/rectangle13" />
+                                    app:srcCompat="@drawable/bodycare5" />
 
                                 <TextView
                                     android:id="@+id/textView7"
                                     android:layout_width="match_parent"
                                     android:layout_height="43dp"
-                                    android:text="SOMETHINC Ombrella Lip Totem Tint"
+                                    android:text="Wonderly Brightening Serum Body Lotion"
                                     android:textAlignment="textStart" />
 
                             </LinearLayout>
@@ -368,7 +265,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="#F4CECE"
+                                android:background="#F7EBEF"
                                 android:orientation="vertical"
                                 tools:layout_editor_absoluteX="8dp"
                                 tools:layout_editor_absoluteY="9dp">
@@ -380,7 +277,7 @@
                                     android:layout_marginLeft="4dp"
                                     android:layout_marginTop="4dp"
                                     android:layout_marginRight="4dp"
-                                    app:srcCompat="@drawable/rectangle14" />
+                                    app:srcCompat="@drawable/bodycare6" />
 
                                 <TextView
                                     android:id="@+id/textView9"
@@ -389,7 +286,7 @@
                                     android:layout_marginLeft="8dp"
                                     android:layout_marginRight="8dp"
                                     android:layout_marginBottom="20dp"
-                                    android:text="Make Over Ultra Cover Liquid Matte Found"
+                                    android:text="Purbasari White Glow Body Serum"
                                     android:textAlignment="textStart" />
                             </LinearLayout>
 

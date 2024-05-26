@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="679dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="332dp"
+                    android:layout_margin="5dp"
+                    android:isScrollContainer="true"
+                    android:overScrollMode="always"
+                    app:srcCompat="@drawable/urutanhaircare" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:scrollbarSize="0dp"
+                    app:cardBackgroundColor="#F7EBEF"
+                    app:cardCornerRadius="24dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/JudulAset"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:text="Urutan Hair Care yang Benar"
+                                    android:textColor="#1E1E1E"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView35"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="1. Hair and Oil scalp"
+                                android:textColor="#1E1E1E" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="dipakai sebelum keramas didiamkan 1-8 jam sebelum keramas biasanya digunakan untuk mengatasi rambut rontok dan rambut yang kering"
+                                android:textColor="#1E1E1E" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="2. Shampoo"
+                                android:textColor="#1E1E1E" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="dapat disesuaikan sesuai jenis rambut dan kebutuhan rambut apabila menggunakan hair oil sebaiknya keramas menggunakan 2x shampoo"
+                                android:textColor="#1E1E1E" />
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="3. Scalp scrub"
+                                android:textColor="#1E1E1E" />
+
+                            <TextView
+                                android:id="@+id/textView24"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="dapat digunakan 1-2x seminggu sesuai dengan kebutuhan dapat digunakan sebelum shampoo atau setelah shampoo (disesuaikan kembali dengan petunjuk penggunaan)"
+                                android:textColor="#1E1E1E" />
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="4. Conditioner"
+                                android:textColor="#1E1E1E" />
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="sebelum menggunakan kondisioner, rambut dapat diperas terlebih dahulu agar efek kondisioner semakin baik"
+                                android:textColor="#1E1E1E" />
+
+                            <TextView
+                                android:id="@+id/textView39"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="5. Hair mask (opsional)"
+                                android:textColor="#1E1E1E" />
+
+                            <TextView
+                                android:id="@+id/textView40"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="5dp"
+                                android:text="digunakan untuk melembutkan rambut dapat digunakan 1-2x seminggu sesuai kebutuhan rambut umumnya hanya dipakai di bagian batang rambut saja (disesuikan kembali dengan jenis hair mask yang dipakal)"
+                                android:textColor="#1E1E1E" />
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -31,5 +31,15 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.bodyCare.setOnClickListener{
+            val intent = Intent(this, BodyCare::class.java)
+            startActivity(intent)
+        }
+
+        binding.hairCare.setOnClickListener{
+            val intent = Intent(this, HairCare::class.java)
+            startActivity(intent)
+        }
+
     }
 }

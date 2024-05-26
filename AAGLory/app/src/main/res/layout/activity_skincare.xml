@@ -155,7 +155,7 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardView4"
+                        android:id="@+id/urutanHairCareCard"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
@@ -195,7 +195,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardView5"
+                        android:id="@+id/BodySerumCard"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
