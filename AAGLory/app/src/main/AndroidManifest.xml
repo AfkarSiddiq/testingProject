@@ -28,6 +28,7 @@
         <activity android:name=".MakeUp" />
         <activity android:name=".SerumWajah" />
         <activity android:name=".Lips" />
+        <activity android:name=".Register" />
     </application>
 
 </manifest>

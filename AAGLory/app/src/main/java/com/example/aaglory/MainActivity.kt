@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
         password = binding.password
         loginButton = binding.loginButton
 
+        binding.registerText.setOnClickListener {
+            val intent = Intent(this, Register::class.java)
+            startActivity(intent)
+        }
+
         binding.loginButton.setOnClickListener(View.OnClickListener {
             if (binding.username.text.toString() == "user" && binding.password.text.toString() == "1234"){
                 Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show()
