@@ -55,13 +55,16 @@
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="110dp"
+                                    android:layout_margin="8dp"
                                     android:orientation="horizontal">
 
                                     <androidx.cardview.widget.CardView
                                         android:id="@+id/CardView_skincare"
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="12dp"
+                                        android:layout_weight="2">
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
@@ -70,17 +73,19 @@
 
                                             <ImageView
                                                 android:id="@+id/header_image"
-                                                android:layout_width="80dp"
-                                                android:layout_height="76dp"
-                                                android:layout_marginTop="4dp"
-                                                android:layout_marginRight="24dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:src="@drawable/skincare" />
 
                                             <TextView
                                                 android:id="@+id/textView"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
+                                                android:layout_marginStart="2dp"
+                                                android:layout_marginEnd="2dp"
                                                 android:text="Skincare"
+                                                android:textAlignment="center"
                                                 android:textColor="#000000" />
                                         </LinearLayout>
                                     </androidx.cardview.widget.CardView>
@@ -88,7 +93,9 @@
                                     <androidx.cardview.widget.CardView
                                         android:id="@+id/CardViewMakeUp"
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="12dp"
+                                        android:layout_weight="2">
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
@@ -97,24 +104,28 @@
 
                                             <ImageView
                                                 android:id="@+id/header_image2"
-                                                android:layout_width="80dp"
-                                                android:layout_height="76dp"
-                                                android:layout_marginTop="4dp"
-                                                android:layout_marginRight="24dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:src="@drawable/makeup" />
 
                                             <TextView
                                                 android:id="@+id/textView2"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
+                                                android:layout_marginStart="2dp"
+                                                android:layout_marginEnd="2dp"
                                                 android:text="Make Up"
+                                                android:textAlignment="center"
                                                 android:textColor="#000000" />
                                         </LinearLayout>
                                     </androidx.cardview.widget.CardView>
 
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="12dp"
+                                        android:layout_weight="2">
 
                                         <LinearLayout
                                             android:id="@+id/bodyCare"
@@ -124,17 +135,19 @@
 
                                             <ImageView
                                                 android:id="@+id/header_image3"
-                                                android:layout_width="80dp"
-                                                android:layout_height="76dp"
-                                                android:layout_marginTop="4dp"
-                                                android:layout_marginRight="24dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:src="@drawable/bodycare" />
 
                                             <TextView
                                                 android:id="@+id/textView3"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
+                                                android:layout_marginStart="2dp"
+                                                android:layout_marginEnd="2dp"
                                                 android:text="Body Care"
+                                                android:textAlignment="center"
                                                 android:textColor="#000000" />
                                         </LinearLayout>
                                     </androidx.cardview.widget.CardView>
@@ -142,7 +155,9 @@
                                     <androidx.cardview.widget.CardView
                                         android:id="@+id/hairCare"
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="12dp"
+                                        android:layout_weight="2">
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
@@ -151,18 +166,20 @@
 
                                             <ImageView
                                                 android:id="@+id/header_image4"
-                                                android:layout_width="87dp"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginTop="4dp"
-                                                android:layout_marginRight="24dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:src="@drawable/haircare" />
 
                                             <TextView
                                                 android:id="@+id/textView4"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
+                                                android:layout_marginStart="2dp"
                                                 android:text="Hair Care"
-                                                android:textColor="#000000" />
+                                                android:textColor="#000000"
+                                                android:layout_marginEnd="2dp"
+                                                android:textAlignment="center" />
                                         </LinearLayout>
                                     </androidx.cardview.widget.CardView>
 
@@ -174,7 +191,7 @@
                             android:id="@+id/textView5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="30dp"
+                            android:layout_marginTop="15dp"
                             android:text="Recomendation"
                             android:textColor="#E2FF0080"
                             android:textSize="22dp"
