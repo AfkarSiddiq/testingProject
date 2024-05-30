@@ -7,415 +7,407 @@
     android:background="#FFFFFF"
     android:padding="16dp">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:background="#FFFFFF"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp">
 
-        <TextView
-            android:id="@+id/categories"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="Categories"
-            android:textColor="#E2FF0080"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent">
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="112dp"
-            android:scrollbarSize="0dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <ScrollView
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:scrollbarSize="0dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/CardView_skincare"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                        <LinearLayout
+                        <TextView
+                            android:id="@+id/categories"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="Categories"
+                            android:textColor="#E2FF0080"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
 
-                            <ImageView
-                                android:id="@+id/header_image"
-                                android:layout_width="80dp"
-                                android:layout_height="76dp"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginRight="24dp"
-                                android:src="@drawable/skincare" />
-
-                            <TextView
-                                android:id="@+id/textView"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Skincare"
-                                android:textColor="#000000" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/CardViewMakeUp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
+                        <HorizontalScrollView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:id="@+id/header_image2"
-                                android:layout_width="80dp"
-                                android:layout_height="76dp"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginRight="24dp"
-                                android:src="@drawable/makeup" />
-
-                            <TextView
-                                android:id="@+id/textView2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Make Up"
-                                android:textColor="#000000" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:id="@+id/bodyCare"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:id="@+id/header_image3"
-                                android:layout_width="80dp"
-                                android:layout_height="76dp"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginRight="24dp"
-                                android:src="@drawable/bodycare" />
-
-                            <TextView
-                                android:id="@+id/textView3"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Body Care"
-                                android:textColor="#000000" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/hairCare"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:id="@+id/header_image4"
-                                android:layout_width="80dp"
-                                android:layout_height="76dp"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginRight="24dp"
-                                android:src="@drawable/haircare" />
-
-                            <TextView
-                                android:id="@+id/textView4"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Hair Care"
-                                android:textColor="#000000" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
-            </LinearLayout>
-        </HorizontalScrollView>
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Recomendation"
-            android:textColor="#E2FF0080"
-            android:textSize="22dp"
-            android:textStyle="bold" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbarSize="0dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cardView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:padding="4dp">
+                            android:layout_height="112dp"
+                            android:scrollbarSize="0dp">
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="#F7EBEF"
-                                android:orientation="vertical"
-                                android:padding="5dp"
-                                tools:ignore="MissingConstraints"
-                                tools:layout_editor_absoluteX="8dp"
-                                tools:layout_editor_absoluteY="9dp">
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
 
-                                <ImageView
-                                    android:id="@+id/imageView2"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/CardView_skincare"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:id="@+id/header_image"
+                                                android:layout_width="80dp"
+                                                android:layout_height="76dp"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginRight="24dp"
+                                                android:src="@drawable/skincare" />
+
+                                            <TextView
+                                                android:id="@+id/textView"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Skincare"
+                                                android:textColor="#000000" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/CardViewMakeUp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:id="@+id/header_image2"
+                                                android:layout_width="80dp"
+                                                android:layout_height="76dp"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginRight="24dp"
+                                                android:src="@drawable/makeup" />
+
+                                            <TextView
+                                                android:id="@+id/textView2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Make Up"
+                                                android:textColor="#000000" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:id="@+id/bodyCare"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:id="@+id/header_image3"
+                                                android:layout_width="80dp"
+                                                android:layout_height="76dp"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginRight="24dp"
+                                                android:src="@drawable/bodycare" />
+
+                                            <TextView
+                                                android:id="@+id/textView3"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Body Care"
+                                                android:textColor="#000000" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/hairCare"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:id="@+id/header_image4"
+                                                android:layout_width="87dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginRight="24dp"
+                                                android:src="@drawable/haircare" />
+
+                                            <TextView
+                                                android:id="@+id/textView4"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Hair Care"
+                                                android:textColor="#000000" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:text="Recomendation"
+                            android:textColor="#E2FF0080"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cardView3"
+                                    android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/product" />
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="2"
+                                    app:cardBackgroundColor="#F7EBEF"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardElevation="5dp">
 
-                                <TextView
-                                    android:id="@+id/textView7"
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:padding="3dp">
+
+                                        <ImageView
+                                            android:id="@+id/imageView3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            app:srcCompat="@drawable/product" />
+
+                                        <TextView
+                                            android:id="@+id/textView11"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:text="5X Ceramide Barrier  Moisture Gel 30gr" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cardView9"
                                     android:layout_width="match_parent"
-                                    android:layout_height="43dp"
-                                    android:text="5X Ceramide Barrier  Moisture Gel 30gr"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#000000" />
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="2"
+                                    app:cardBackgroundColor="#F7EBEF"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardElevation="5dp">
 
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:padding="3dp">
+
+                                        <ImageView
+                                            android:id="@+id/imageView9"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            app:srcCompat="@drawable/product1" />
+
+                                        <TextView
+                                            android:id="@+id/textView14"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:text="Fields At Nightfall 100ml" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
                             </LinearLayout>
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cardView9"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:padding="4dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="#F7EBEF"
-                                android:orientation="vertical"
-                                android:padding="5dp"
-                                tools:layout_editor_absoluteX="8dp"
-                                tools:layout_editor_absoluteY="9dp">
+                                android:layout_height="200dp"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
 
-                                <ImageView
-                                    android:id="@+id/imageView4"
+                                <androidx.cardview.widget.CardView
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="4dp"
-                                    android:layout_marginTop="3dp"
-                                    android:layout_marginRight="4dp"
-                                    app:srcCompat="@drawable/product1" />
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="2"
+                                    app:cardBackgroundColor="#F7EBEF"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardElevation="5dp">
 
-                                <TextView
-                                    android:id="@+id/textView9"
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:padding="3dp">
+
+                                        <ImageView
+                                            android:id="@+id/imageView10"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            app:srcCompat="@drawable/product2" />
+
+                                        <TextView
+                                            android:id="@+id/textView41"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:text="Make Over Hydrastay Lite Flow Cushion 15g" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="8dp"
-                                    android:layout_marginRight="8dp"
-                                    android:layout_marginBottom="20dp"
-                                    android:text="Fields At Nightfall 100ml"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#000000" />
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="2"
+                                    app:cardBackgroundColor="#F7EBEF"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardElevation="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:padding="3dp">
+
+                                        <ImageView
+                                            android:id="@+id/imageView11"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            app:srcCompat="@drawable/product3" />
+
+                                        <TextView
+                                            android:id="@+id/textView42"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:layout_weight="1"
+                                            android:text="Cashew Later Velvet Mouse Lip Duo" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
                             </LinearLayout>
 
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </androidx.cardview.widget.CardView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="2"
+                                    app:cardBackgroundColor="#F7EBEF"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardElevation="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:padding="3dp">
+
+                                        <ImageView
+                                            android:id="@+id/imageView12"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            app:srcCompat="@drawable/product4" />
+
+                                        <TextView
+                                            android:id="@+id/textView43"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:text="Cliquematte Lip Stylo 2g - Lipstick Matte" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="2"
+                                    app:cardBackgroundColor="#F7EBEF"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardElevation="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:padding="3dp">
+
+                                        <ImageView
+                                            android:id="@+id/imageView13"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            app:srcCompat="@drawable/product5" />
+
+                                        <TextView
+                                            android:id="@+id/textView44"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:text="GRACE AND GLOW BODY WASH" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
                 </LinearLayout>
+            </ScrollView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="4dp">
-
-                        <LinearLayout
-                            android:id="@+id/linearLayout"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            tools:ignore="MissingConstraints"
-                            tools:layout_editor_absoluteX="4dp"
-                            tools:layout_editor_absoluteY="5dp">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="8dp"
-                                android:background="#F7EBEF"
-                                android:orientation="vertical"
-                                android:padding="5dp">
-
-                                <ImageView
-                                    android:id="@+id/imageView"
-                                    android:layout_width="165dp"
-                                    android:layout_height="152dp"
-                                    android:layout_marginLeft="4dp"
-                                    android:layout_marginTop="3dp"
-                                    android:layout_marginRight="4dp"
-                                    app:srcCompat="@drawable/product2" />
-
-                                <TextView
-                                    android:id="@+id/textView11"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="42dp"
-                                    android:layout_marginLeft="8dp"
-                                    android:layout_marginRight="8dp"
-                                    android:text="Make Over Hydrastay Lite Flow Cushion 15g"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#000000" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="#F7EBEF"
-                                android:orientation="vertical"
-                                android:padding="5dp">
-
-                                <ImageView
-                                    android:id="@+id/imageView3"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    app:srcCompat="@drawable/product3" />
-
-                                <TextView
-                                    android:id="@+id/textView8"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="8dp"
-                                    android:layout_marginRight="8dp"
-                                    android:text="Cashew Later Velvet Mouse Lip Duo"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#000000" />
-                            </LinearLayout>
-                        </LinearLayout>
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="4dp">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            tools:ignore="MissingConstraints"
-                            tools:layout_editor_absoluteX="4dp"
-                            tools:layout_editor_absoluteY="5dp">
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="8dp"
-                                android:background="#F7EBEF"
-                                android:orientation="vertical"
-                                android:padding="5dp">
-
-                                <ImageView
-                                    android:id="@+id/imageView12"
-                                    android:layout_width="165dp"
-                                    android:layout_height="152dp"
-                                    android:layout_marginLeft="4dp"
-                                    android:layout_marginTop="3dp"
-                                    android:layout_marginRight="4dp"
-                                    app:srcCompat="@drawable/product4" />
-
-                                <TextView
-                                    android:id="@+id/textView14"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="43dp"
-                                    android:layout_marginLeft="8dp"
-                                    android:layout_marginRight="8dp"
-                                    android:text="Cliquematte Lip Stylo 2g - Lipstick Matte"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#000000" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="#F7EBEF"
-                                android:orientation="vertical"
-                                android:padding="5dp">
-
-                                <ImageView
-                                    android:id="@+id/imageView13"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="4dp"
-                                    android:layout_marginTop="3dp"
-                                    android:layout_marginRight="4dp"
-                                    app:srcCompat="@drawable/product5" />
-
-                                <TextView
-                                    android:id="@+id/textView10"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="8dp"
-                                    android:layout_marginRight="8dp"
-                                    android:text="GRACE AND GLOW BODY WASH"
-                                    android:textAlignment="textStart"
-                                    android:textColor="#000000" />
-                            </LinearLayout>
-                        </LinearLayout>
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-        </ScrollView>
-
-    </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
